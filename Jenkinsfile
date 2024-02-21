@@ -36,7 +36,7 @@ pipeline {
             steps {
                 // Run your Docker container
                 script {
-                    sh "docker run --name ${CONTAINER_NAME} -d -p 8080:8080 ${DOCKER_IMAGE}"
+                    sh "docker run --name ${CONTAINER_NAME} -d -p 8888:8888 ${DOCKER_IMAGE}"
                 }
             }
         }
