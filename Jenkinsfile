@@ -18,12 +18,12 @@ pipeline {
             steps {
                 // Build your Spring Boot application
                 script {
-                    sh "./mvnw clean package" // Adjust the build command as needed
+                    sh "./mvnw clean install" // Adjust the build command as needed
                 }
             }
         }
 
-        stage('Build and Push Docker Image') {
+        stage('Build Docker Image') {
             steps {
                 // Build and push your Docker image
                 script {
